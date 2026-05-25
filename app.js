@@ -15,6 +15,7 @@ const PRESET_ITEMS = [
   { name: "సారీ పెట్టీ కోట్స్", price: 0 },
   { name: "డ్రెస్ పెట్టీ కోట్స్", price: 0 },
   { name: "డ్రెస్ పైకుట్లు", price: 0 },
+  { name: "అంచులు", price: 0 },
   { name: "అడ్జస్ట్మెంట్", price: 0 },
 ];
 
