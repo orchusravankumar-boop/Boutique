@@ -1,4 +1,4 @@
-const STORAGE_KEY = "durga-boutique-preset-bill-v3";
+const STORAGE_KEY = "durga-boutique-session-bill-v4";
 
 // Edit this list to set your own preset boutique options and prices.
 const PRESET_ITEMS = [
@@ -46,7 +46,7 @@ function readNumber(value, fallback = 0) {
 
 function loadSavedRows() {
   try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    const saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY));
     return Array.isArray(saved?.rows) ? saved.rows : [];
   } catch {
     return [];
@@ -54,7 +54,7 @@ function loadSavedRows() {
 }
 
 function saveBill() {
-  localStorage.setItem(
+  sessionStorage.setItem(
     STORAGE_KEY,
     JSON.stringify({
       rows: rows.map((row) => ({
