@@ -1,4 +1,4 @@
-const STORAGE_KEY = "grace-boutique-preset-bill-v2";
+const STORAGE_KEY = "durga-boutique-preset-bill-v3";
 
 // Edit this list to set your own preset boutique options and prices.
 const PRESET_ITEMS = [
@@ -7,9 +7,13 @@ const PRESET_ITEMS = [
   { name: "పైపింగ్ బ్లౌజ్", price: 0 },
   { name: "మోడల్ బ్లౌజ్", price: 0 },
   { name: "డ్రెస్", price: 0 },
-  { name: "పెట్టీ కోట్స్", price: 0 },
-  { name: "చిన్న ఫాల్", price: 0 },
-  { name: "పెద్ద ఫాల్", price: 0 },
+  { name: "లైనింగ్ ప్రైస్", price: 0 },
+  { name: "చిన్న ఫాల్ ప్రైస్", price: 0 },
+  { name: "పెద్ద ఫాల్ ప్రైస్", price: 0 },
+  { name: "ఫాల్స్ కుట్టుకూలి", price: 0 },
+  { name: "సారీ పెట్టీ కోట్స్", price: 0 },
+  { name: "డ్రెస్ పెట్టీ కోట్స్", price: 0 },
+  { name: "డ్రెస్ పైకుట్లు", price: 0 },
   { name: "అడ్జస్ట్మెంట్", price: 0 },
 ];
 

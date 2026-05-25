@@ -2,7 +2,7 @@
   "name": "grace-boutique-billing",
   "version": "1.0.0",
   "private": true,
-  "description": "Grace Boutique billing web service",
+  "description": "Durga Boutique billing web service",
   "scripts": {
     "start": "node server.js"
   },

@@ -59,5 +59,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`Grace Boutique billing app running on http://${host}:${port}`);
+  console.log(`Durga Boutique billing app running on http://${host}:${port}`);
 });
