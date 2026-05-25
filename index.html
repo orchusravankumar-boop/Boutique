@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grace Boutique Billing</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-labelledby="app-title">
+        <div class="brand-strip" aria-hidden="true"></div>
+
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">Boutique Billing</p>
+            <h1 id="app-title">Grace Boutique</h1>
+          </div>
+          <div class="header-actions">
+            <button class="ghost-button" id="new-bill" type="button">New Bill</button>
+            <button class="primary-button" id="print-bill" type="button">Print Bill</button>
+          </div>
+        </header>
+
+        <section class="bill-form" aria-label="Bill items">
+          <div class="items-card">
+            <div class="items-header">
+              <h2>Items</h2>
+            </div>
+
+            <div class="items-table" role="table" aria-label="Bill items">
+              <div class="items-row table-heading" role="row">
+                <span role="columnheader">Item name</span>
+                <span role="columnheader">Price</span>
+                <span role="columnheader">Qty</span>
+                <span role="columnheader">Amount</span>
+              </div>
+              <div id="items-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="receipt-section" aria-label="Bill preview">
+          <div class="receipt-frame">
+            <article class="receipt" id="receipt">
+              <div class="receipt-art" aria-hidden="true"></div>
+
+              <header class="receipt-header">
+                <div class="receipt-mark" aria-hidden="true">
+                  <span></span>
+                </div>
+                <p class="receipt-kicker">Ladies Tailoring & Boutique</p>
+                <h2>Grace Boutique</h2>
+                <p class="receipt-subtitle">Custom stitching, alterations and designer wear</p>
+              </header>
+
+              <div class="receipt-divider" aria-hidden="true"></div>
+
+              <div class="receipt-lines">
+                <div class="receipt-line heading">
+                  <span>Item</span>
+                  <span>Qty</span>
+                  <span>Price</span>
+                  <span>Total</span>
+                </div>
+                <div id="preview-items"></div>
+              </div>
+
+              <div class="receipt-totals">
+                <div>
+                  <span>Subtotal</span>
+                  <strong id="preview-subtotal">Rs 0</strong>
+                </div>
+                <div class="grand-total">
+                  <span>Total</span>
+                  <strong id="preview-total">Rs 0</strong>
+                </div>
+              </div>
+
+              <footer class="receipt-footer">
+                <p>Thank you for choosing Grace Boutique</p>
+                <small>Perfect fit, graceful finish.</small>
+              </footer>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <template id="item-row-template">
+      <div class="items-row" role="row">
+        <div class="item-field item-name-field">
+          <span>Item name</span>
+          <strong class="item-name"></strong>
+        </div>
+        <label class="item-field item-price-field">
+          <span>Price</span>
+          <input class="item-price" type="number" min="0" step="1" inputmode="decimal" placeholder="0">
+        </label>
+        <label class="item-field item-qty-field">
+          <span>Qty</span>
+          <input class="item-qty" type="number" min="0" step="1" inputmode="numeric" value="0">
+        </label>
+        <div class="item-field item-total-field">
+          <span>Amount</span>
+          <output class="item-amount">Rs 0</output>
+        </div>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
