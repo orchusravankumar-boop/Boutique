@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: grace-boutique-billing
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeployTrigger: commit
