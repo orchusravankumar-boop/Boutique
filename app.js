@@ -6,6 +6,7 @@ const PRESET_ITEMS = [
   { name: "లైనింగ్ బ్లౌజ్", price: 0 },
   { name: "పైపింగ్ బ్లౌజ్", price: 0 },
   { name: "మోడల్ బ్లౌజ్", price: 0 },
+  { name: "బ్లౌజ్ పీస్ ప్రైస్", price: 0 },
   { name: "డ్రెస్", price: 0 },
   { name: "లైనింగ్ ప్రైస్", price: 0 },
   { name: "చిన్న ఫాల్ ప్రైస్", price: 0 },
