@@ -414,24 +414,6 @@ h1 {
   color: var(--rose-dark);
 }
 
-.receipt-footer {
-  margin: 12px 28px 28px;
-  border-radius: 8px;
-  background: #fff3f6;
-  padding: 12px;
-  text-align: center;
-}
-
-.receipt-footer p {
-  margin-bottom: 0.15rem;
-  color: var(--rose-dark);
-  font-weight: 900;
-}
-
-.receipt-footer small {
-  color: var(--muted);
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
